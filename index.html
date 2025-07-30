@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Yuvashree</title>
+    <style>
+       /* Base reset and smooth scrolling */
+       *{
+        background-size: 100%;
+       }
+       body{
+         background-color: rgb(218, 193, 193);
+       }
+       html {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+    }
+    /* Hero section with background image */
+    .hero-section {
+        position: relative;
+        height: 100vh;
+        background: url('back2.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* Content inside hero */
+.hero-content {
+  text-align: center;
+  color: rgb(67, 50, 50);
+}
+
+/* Down arrow button */
+.down-arrow {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 24px;
+  color: rgb(18, 18, 18);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgb(8, 8, 8);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.down-arrow:hover {
+  transform: translateY(5px);
+  background-color: rgba(233, 229, 229, 0.2);
+}
+
+/* Hide button on mobile */
+@media (max-width: 768px) {
+  .down-arrow {
+    display: none;
+  }
+  .hero-content h1{
+    font-size: 20px;
+  }
+  .contacts{
+    display: block;
+    gap:0;
+  }
+}
+
+        nav{
+            background-color:rgb(121, 50, 55);
+            color: rgb(242, 236, 236);
+        }
+        .nav-link{
+            color: white;
+        }
+    .content {
+         color: rgb(13, 13, 13);
+         font-family: cursive;
+         font-size: 1.5rem;
+         text-align: center;
+         padding: 20px;
+        }
+    @media screen and (max-width: 480px) {
+        .content {
+             font-size:0.5rem;
+             padding: 10px;
+            }
+        
+     }
+
+     #skills,#projects,#internship,#contact{
+        margin-top:30px;
+        padding: 20px;
+       /* background-color: rgb(84, 59, 59);*/
+     }
+     .card:hover{
+        background-color: rgb(255, 253, 140);
+     }
+    .profile2:hover{
+        transform: scale(1.2);
+    }
+    .certify{
+        background-color: white;
+        border-radius: 5px;
+    }
+    .icon {
+        font-size: 20px;
+        color: rgb(2, 2, 2); /* or any color you prefer */
+        transition: color 0.3s ease;
+    }
+    .icon:hover {
+        color: #ccc;
+    }
+    a{
+        text-decoration: none;
+    }
+    h2{
+        font-size: 40px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid"><div class="navbar-brand">Yuvashree</div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="container-fluid">
+            <h1>Yuvashree</h1>
+            <a class="btn p-2" style="color: white; background-color: brown;" href="yuva_shree.pdf">Download resume</a>
+            <br>
+            <a href="#content-section" class="down-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="content-section">
+    <div id="about" style="margin-top: 20px;"><center>
+            <h2>About me</h2>
+            <hr>
+    <div class="container-fluid profile-container " >
+                <div class="certify">
+                    <div class="content ">
+                        <p style="line-height: 50px;">Hello! I'm Yuvashree, <b> Bachelor of Computer Application (BCA) </b>graduate from Sri kanyaka parameswari arts & science college for women,chennai.And strong interest in <b>web development, UI/UX design and Python applications</b>. I love turning ideas into interactive, user-friendly websites and applications using modern technologies.
+                        </p>
+                    </div> 
+                </div>
+                             
+            
+                
+        </div>
+        </center>
+    </div>
+</div>
+
+    
+<!--Skills-->    
+    <div  id="skills">
+        <center>
+        <h2>Skills</h2>
+        <hr>
+        <div class="container-fluid d-flex ">
+            <center>
+        <div class="row p-3">
+            <div class="col-md-12 certify p-3 m-4">
+                <h4>Frontend technologies</h4>
+                <ul class="p-3">
+                    <li class="btn btn-primary m-2">HTML</li>
+                    <li class="btn btn-primary m-2">CSS</li>
+                    <li class="btn btn-primary m-2">JavaScript</li>
+                    <li class="btn btn-primary m-2">Bootstrap</li>
+                    <li class="btn btn-primary m-2">JQuery</li>
+                    <li class="btn btn-primary m-2">React.js</li>
+                </ul>
+                    
+            </div>
+            <div class="col-md-12 certify p-3 m-4">
+                <h4>Backend technologies</h4>
+                <ul class="p-3">
+                    <li class="btn btn-primary m-2">Node.js</li>
+                    <li class="btn btn-primary m-2">Django</li>
+                    <li class="btn btn-primary m-2">Rest API</li>
+                </ul>
+                    
+            </div>
+            <div class="col-md-12 certify p-3 m-4">
+                <h4>Programming Languages</h4>
+                <ul class="p-3">
+                    <li class="btn btn-primary m-2">C++</li>
+                    <li class="btn btn-primary m-2">Python</li>
+                    <li class="btn btn-primary m-2">Java</li>
+                    <li class="btn btn-primary m-2">PHP</li>
+                    <li class="btn btn-primary m-2">JavaScript</li>
+                </ul>
+                    
+            </div>
+            <div class="col-md-12 certify p-3 m-4">
+                        <h4>Database</h4>
+                        <ul class="p-3">
+                            <li class="btn btn-primary m-2">MySQL</li>
+                            <li class="btn btn-primary m-2">MangoDB</li>
+                        </ul>
+            </div>
+        </div>
+        </center>
+        </div>
+        </center>
+    </div>
+
+    <!--Project-->
+    <div id="projects"><center>
+        <h2>Projects</h2>
+        </center>
+        <hr>
+        <div class="container-fluid">
+            <div class="row p-3 ">
+                <div class="col-md-4 p-2">
+                    <div class="card p-2" style="width: 23rem;height: 20rem;">
+                        
+                        <div class="card-body p-2">
+                            <div class="card-title"><h5><b>Gaming Learnig Website</b></h5></div>
+                            <div class="card-text p-2">Developed an interactive educational website with four educational games, math puzzles, riddles, connections, and mind challenges games that is designed to enhance student’s problem-solving skills, and creativity.<br><b>Technologies:</b> HTML,CSS,JavaScript</div>
+                            <div class="d-flex m-2"><a class="btn btn-danger m-2" href="https://github.com/yuvasshree1824/Gaming_Learning_Website">GitHub</a><a class="btn btn-primary m-2" href="https://yuvasshree1824.github.io/Gaming_Learning_Website/">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-2">
+                    <div class="card p-2" style="width: 23rem;height: 20rem;">
+                        
+                        <div class="card-body p-2">
+                            <div class="card-title"><h5><b>Story Reading Website</b></h5></div>
+                            <div class="card-text p-2">This platform hosts 15 unique stories for reading purposes only. It is ideal for learners, kids, and reading enthusiasts looking 
+for an easy-to-navigate and visually appealing digital storybook. <br><b>Technologies:</b> HTML,CSS,JavaScript,Bootstrap</div>
+                            <div class="d-flex m-2"><a class="btn btn-danger m-2" href="https://github.com/yuvasshree1824/Story-telling" >GitHub</a><a class="btn btn-primary m-2" href="https://yuvasshree1824.github.io/Story-telling/">View</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-2">
+                    <div class="card p-2" style="width: 23rem;height: 20rem;">
+                        
+                        <div class="card-body p-2">
+                            <div class="card-title"><h5><b>Todo</b></h5></div>
+                            <div class="card-text p-2">A minimal and responsive To-Do list web application built using HTML, CSS, and JavaScript. This app allows users to add, delete, and mark tasks as completed—all directly in the browser with no backend.<br><b>Technologies:</b> HTML,CSS,JavaScript,Bootstrap</div>
+                            <div class="d-flex m-2"><a class="btn btn-danger m-2" href="https://github.com/yuvasshree1824/todo">GitHub</a><a class="btn btn-primary m-2" href="https://yuvasshree1824.github.io/todo/">View</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-2">
+                    <div class="card p-2" style="width: 23rem;height: 20rem;">
+                        
+                        <div class="card-body p-2">
+                            <div class="card-title"><h5><b>Amazon Webscrapping</b></h5></div>
+                            <div class="card-text p-2">Automated product data extraction from Amazon for titles, prices, and reviews using Python, supporting market research. <br><b>Technologies:</b> Python , Selenium, BeautifulSoup, Pandas </div>
+                            <div class="d-flex m-2"><a class="btn btn-danger m-2" href="https://github.com/yuvasshree1824/Amazon_WebScrapping">GitHub</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-2">
+                    <div class="card p-2" style="width: 23rem;height: 20rem;">
+                        
+                        <div class="card-body p-2">
+                            <div class="card-title"><h5><b>Language Learners </b></h5></div>
+                            <div class="card-text p-2">Created a desktop app to translate text between multiple languages through a simple GUI using the Googletrans API. <br><b>Technologies:</b>Python, Tkinter, Googletrans  </div>
+                            <div class="d-flex m-2"><a class="btn btn-danger m-2" href="https://github.com/yuvasshree1824/Translate">GitHub</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <!--Internship-->
+    <div id="internship" ><center>
+        <h2>Internship</h2>
+        </center>
+        <hr>
+        <div class="container-fluid" style="margin-top: 20px;">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="certify p-3">
+                        <h4><b>“Python Developer Intern”</b>- Cybernaut Edu-Tech LLP</h4>
+                        <br>
+                        <p>Worked on real-time mini projects using Python including Amazon Web Scraper, Language Learning App. 
+Gained hands-on experience in Python programming, debugging, logic building, teamwork, and basic machine learning concepts</p>
+                    </div>
+
+
+                </div>
+            </div>
+             
+
+    </div>
+    <div id="contact">
+        <center><h2>Contact</h2></center>
+           
+            <div class="row ">
+                <div class="col-md-12 ">
+                     <div>
+                        
+                    <hr>
+                    <div class="container-fluid contacts"><center>
+                        <a href="mailto:u.yuvashree1824@gmail.com" class="btn btn-primary" style="color:white">Mail</a></p>
+                         <a href="https://github.com/yuvasshree1824" target="_blank" class="icon"><i class="fab fa-github"></i> github</a></p>
+                    <a href="https://www.linkedin.com/in/yuvashree-u-6068552b3 " target="_blank" class="icon"><i class="fab fa-linkedin"></i> Linkedin</a></p>
+
+                    </center>
+                    </div>
+
+                </div>
+            </div>
+               
+
+            </div>
+         </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>
